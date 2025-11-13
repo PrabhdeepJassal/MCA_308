@@ -75,23 +75,3 @@ iris_df = pd.read_csv(iris_filename)
 print("\n2. Displaying the first 5 rows of the Iris dataset:")
 print(iris_df.head())
 
-# # --- Q.7: Delete row 4 and column 3 from the Iris dataset ---
-
-# print("\n\n--- Q.7: Deleting a Row and Column ---")
-# print("Original Iris DataFrame shape:", iris_df.shape)
-
-# # Delete row with index 4
-# # The drop() method returns a new DataFrame with the row removed.
-# df_after_row_delete = iris_df.drop(index=4)
-
-# # Get the name of the column at index 3
-# col_to_delete = iris_df.columns[3]
-# print(f"Column at index 3 to be deleted: '{col_to_delete}'")
-
-# # Delete column with index 3 ('petal_width') from the already modified DataFrame
-# # axis=1 specifies that we are deleting a column.
-# final_df = df_after_row_delete.drop(columns=[col_to_delete])
-
-# print("\nResult after deleting row with index 4 and column with index 3:")
-# print(final_df)
-# print("\nFinal DataFrame shape:", final_df.shape)
